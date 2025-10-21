@@ -184,3 +184,100 @@ input[type="text"] {
 input[type="text"]::placeholder {
     color: #888;
 }
+/* ======== RESPONSIVIDADE ======== */
+
+/* Tablets e telas médias (até 992px) */
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    #main-header {
+        padding: 20px;
+    }
+
+    #main-content {
+        padding: 20px;
+        margin: 0 15px 30px 15px;
+    }
+
+    .nav-item {
+        margin: 0 12px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .btn-submit {
+        margin-left: 20px;
+        width: auto;
+    }
+}
+
+/* Tablets pequenos e smartphones (até 768px) */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    #main-nav {
+        padding: 8px 0;
+    }
+
+    .nav-item {
+        display: block;
+        margin: 8px 0;
+    }
+
+    #main-content {
+        padding: 15px;
+        margin: 0 10px 25px 10px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .btn-submit {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    header h1 {
+        padding-bottom: 15px;
+    }
+}
+
+/* Smartphones pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    #main-header {
+        padding: 15px;
+    }
+
+    #main-content {
+        padding: 10px;
+        margin: 0 5px 20px 5px;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .paragrafo {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .btn-submit {
+        font-size: 0.95rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+}
