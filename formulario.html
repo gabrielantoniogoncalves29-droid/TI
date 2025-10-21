@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
     <title>Pesquisa de Hábitos em LaTeX</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="imagens/apple-icon-180x180.png">
 </head>
+
 <body>
     <header id="main-header" class="header">
         <h1 class="title">Pesquisa de Hábitos em LaTeX</h1>
@@ -19,72 +21,81 @@
             </ul>
         </nav>
     </header>
-<section id="survey" class="section">
-    <form action="#" method="post">
-        <!-- Campo Nome -->
-        <div class="question">
-            <p class="paragrafo"><strong>1.</strong> Seu nome:</p>
-            <input type="text" name="nome" placeholder="Digite seu nome" required>
-        </div>
+    <section id="survey" class="section">
+        <form action="#" method="post">
+            <!-- Campo Nome -->
+            <div class="question">
+                <p class="paragrafo"><strong>1.</strong> Seu nome:</p>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+            </div>
 
 
-<section id="survey" class="section">
-    <form action="#" method="post">
-        <div class="question">
-            <p class="paragrafo"><strong>2.</strong> Com que frequência você usa LaTeX?</p>
-            <select name="frequencia">
-                <option value="">Escolha uma opção</option>
-                <option value="diariamente">Diariamente</option>
-                <option value="semanalmente">Semanalmente</option>
-                <option value="ocasionalmente">Ocasionalmente</option>
-                <option value="nunca">Nunca</option>
-            </select>
-        </div>
+            <section id="survey" class="section">
+                <form action="#" method="post">
+                    <div class="question">
+                        <p class="paragrafo"><strong>2.</strong> Com que frequência você usa LaTeX?</p>
+                        <select name="frequencia">
+                            <option value="">Escolha uma opção</option>
+                            <option value="diariamente">Diariamente</option>
+                            <option value="semanalmente">Semanalmente</option>
+                            <option value="ocasionalmente">Ocasionalmente</option>
+                            <option value="nunca">Nunca</option>
+                        </select>
+                    </div>
 
-        <div class="question">
-            <p class="paragrafo"><strong>3.</strong> Qual sua parte favorita do LaTeX?</p>
-            <input type="checkbox" id="eq" name="favorito" value="equacoes"><label for="eq">Equações matemáticas</label><br>
-            <input type="checkbox" id="tab" name="favorito" value="tabelas"><label for="tab">Tabelas e gráficos</label><br>
-            <input type="checkbox" id="form" name="favorito" value="formatacao"><label for="form">Formatação automática</label><br>
-            <input type="checkbox" id="fig" name="favorito" value="figuras"><label for="fig">Inserção de figuras</label>
-        </div>
+                    <div class="question">
+                        <p class="paragrafo"><strong>3.</strong> Qual sua parte favorita do LaTeX?</p>
+                        <input type="checkbox" id="eq" name="favorito" value="equacoes"><label for="eq">Equações
+                            matemáticas</label><br>
+                        <input type="checkbox" id="tab" name="favorito" value="tabelas"><label for="tab">Tabelas e
+                            gráficos</label><br>
+                        <input type="checkbox" id="form" name="favorito" value="formatacao"><label for="form">Formatação
+                            automática</label><br>
+                        <input type="checkbox" id="fig" name="favorito" value="figuras"><label for="fig">Inserção de
+                            figuras</label>
+                    </div>
 
-        <div class="question">
-            <p class="paragrafo"><strong>4.</strong> Qual é o maior desafio ao usar LaTeX?</p>
-            <textarea name="desafio" rows="4" cols="50" placeholder="Escreva sua resposta aqui..."></textarea>
-        </div>
+                    <div class="question">
+                        <p class="paragrafo"><strong>4.</strong> Qual é o maior desafio ao usar LaTeX?</p>
+                        <textarea name="desafio" rows="4" cols="50"
+                            placeholder="Escreva sua resposta aqui..."></textarea>
+                    </div>
 
-        <div class="question">
-            <p class="paragrafo"><strong>5.</strong> Você prefere usar LaTeX via:</p>
-            <input type="radio" id="offline" name="modo" value="offline"><label for="offline">Offline (TeXLive/MiKTeX)</label><br>
-            <input type="radio" id="online" name="modo" value="online"><label for="online">Online (Overleaf, ShareLaTeX)</label>
-        </div>
+                    <div class="question">
+                        <p class="paragrafo"><strong>5.</strong> Você prefere usar LaTeX via:</p>
+                        <input type="radio" id="offline" name="modo" value="offline"><label for="offline">Offline
+                            (TeXLive/MiKTeX)</label><br>
+                        <input type="radio" id="online" name="modo" value="online"><label for="online">Online (Overleaf,
+                            ShareLaTeX)</label>
+                    </div>
 
-        <div class="question">
-            <p class="paragrafo"><strong>6.</strong> Para que tipo de documentos você mais usa LaTeX?</p>
-            <select name="tipo_doc">
-                <option value="">Escolha uma opção</option>
-                <option value="trabalhos_academicos">Trabalhos acadêmicos</option>
-                <option value="artigos_cientificos">Artigos científicos</option>
-                <option value="relatorios_tecnicos">Relatórios técnicos</option>
-                <option value="presentacoes">Apresentações</option>
-            </select>
-        </div>
+                    <div class="question">
+                        <p class="paragrafo"><strong>6.</strong> Para que tipo de documentos você mais usa LaTeX?</p>
+                        <select name="tipo_doc">
+                            <option value="">Escolha uma opção</option>
+                            <option value="trabalhos_academicos">Trabalhos acadêmicos</option>
+                            <option value="artigos_cientificos">Artigos científicos</option>
+                            <option value="relatorios_tecnicos">Relatórios técnicos</option>
+                            <option value="presentacoes">Apresentações</option>
+                        </select>
+                    </div>
 
-        <div class="question">
-            <p class="paragrafo"><strong>7.</strong> O que você mais gostaria de aprender sobre LaTeX?</p>
-            <textarea name="aprender" rows="3" cols="50" placeholder="Escreva sua resposta aqui..."></textarea>
-        </div>
+                    <div class="question">
+                        <p class="paragrafo"><strong>7.</strong> O que você mais gostaria de aprender sobre LaTeX?</p>
+                        <textarea name="aprender" rows="3" cols="50"
+                            placeholder="Escreva sua resposta aqui..."></textarea>
+                    </div>
 
-        <button type="submit" class="btn-submit">
-            Enviar Respostas
-        </button>
-    </form>
-</section>
+                    <button type="submit" class="btn-submit">
+                        Enviar Respostas
+                    </button>
+                </form>
+            </section>
 
 
-    <footer id="main-footer" class="footer">
-        <p class="footer-text">2025 - Trabalho interdiciplinar de PWI & FI.</p>
-    </footer>
+            <footer id="main-footer" class="footer">
+                <p class="footer-text">2025 - Trabalho interdiciplinar de PWI & FI.</p>
+            </footer>
 </body>
+
 </html>
